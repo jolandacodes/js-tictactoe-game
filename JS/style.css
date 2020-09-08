@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+  font-family: Raleway;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #67568c;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  height: auto;
+  width: 40%;
+  border-radius: 25px;
+  background-color: #FFFFFF;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.header {
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 10px 0;
+  color: #ff6e6c;
+  font-size: 54px;
+}
+
+.restartButton {
+  background-color: #67568c;
+  color: white;
+  border-radius: 2px;
+  border-color: #67568c;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.restartButton:hover {
+  background-color: #ff6e6c;
+  ;
+  color: white;
+  border-radius: 2px;
+  border-color: #ff6e6c;
+  ;
+  padding: 5px;
+  font-size: 14px;
+  transition-duration: 0.4s;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px 0 20px 0;
+}
+
+.col-12 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 33.33%;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+}
+
+.cell {
+  cursor: pointer;
+  border: 3px solid #1f1235;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  min-height: 160px;
+  padding: 0;
+}
+
+/* CELL BORDER */
+.cell:first-child,
+.cell:nth-child(2),
+.cell:nth-child(3) {
+  border-top: none;
+}
+
+.cell:nth-child(3n + 1) {
+  border-left: none;
+}
+
+.cell:nth-child(3n + 3) {
+  border-right: none;
+}
+
+#no-border {
+  border-bottom: none;
+}
+
+.footer {
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 10px 0;
+}
+
+.x,
+.o {
+  cursor: default;
+}
+
+.x::after {
+  content: 'x';
+  color: #67568c;
+  font-size: 130px;
+}
+
+.o::after {
+  content: 'o';
+  color: #ff6e6c;
+  font-size: 130px;
+}
